@@ -5,6 +5,8 @@
   "dependencies": {
     "axios": "^0.19.0",
     "http-proxy-middleware": "^0.20.0",
+    "lodash": "^4.17.15",
+    "nes-react": "^1.0.2",
     "netlify-lambda": "^1.6.3",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
