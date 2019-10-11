@@ -3,13 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.19.0",
+    "http-proxy-middleware": "^0.20.0",
+    "netlify-lambda": "^1.6.3",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "yarn start:app start:labda",
+    "build": "yarn build:app build:lambda",
+    "start:app": "react-scripts start",
+    "build:app": "react-scripts build",
+    "start:lambda": "netlify-lambda serve src/lambda",
+    "build:lambda": "netlify-lambda build src/lambda",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
